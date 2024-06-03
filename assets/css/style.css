@@ -1,0 +1,114 @@
+
+@import url('./colors.css');
+@import url('./media.css');
+@import url('https://fonts.googleapis.com/css?family=Inter:700|Inter:400');
+
+body {
+    margin: 0;
+    background-color: var(--background);
+  font-family: 'Inter';
+  font-weight: 400;
+  color: var(--text);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Inter';
+  font-weight: 700;
+  color: var(--text);
+}
+
+html {font-size: 100%;} /* 16px */
+
+h1 {font-size: 4.210rem; /* 67.36px */}
+
+h2 {font-size: 3.158rem; /* 50.56px */}
+
+h3 {font-size: 2.369rem; /* 37.92px */}
+
+h4 {font-size: 1.777rem; /* 28.48px */}
+
+h5 {font-size: 1.333rem; /* 21.28px */}
+
+small {font-size: 0.750rem; /* 12px */}
+
+
+#MAIN_BANNER h1{
+    font-size: 6rem;
+}
+#MAIN_BANNER h2{
+    font-size: 4rem;
+}
+
+#MAIN_BANNER{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+#MAIN_BANNER .bg_img{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background:rgba(0, 0, 0, 0.6)  url('../img/main_banner.jpg');
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+
+.img-wrapper{
+    width: 100%;
+    box-sizing: border-box;
+}
+.img-wrapper img{
+    width: 100%;
+}   
+/* Container */
+
+.container{
+    
+    margin: 0  auto;
+    max-width: 1240px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Cards  */
+.card-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    box-sizing: border-box;
+    flex-shrink: 1;
+    flex-wrap: wrap; 
+}
+
+.card{
+    box-sizing: border-box;
+    max-height:350px;
+    border-radius: 10px;
+    background-color:var(--background-500);
+    padding: 15px;
+    background-color: var(--primary-50);
+    max-width: 400px;
+    max-width: calc(33% - 10px);
+    text-overflow: ellipsis;
+    margin-bottom: 20px;
+    
+}
+.card .img-wrapper{
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card .content h4{
+    margin: 0.5rem 0;
+}
+.contact-form{
+    background-color:var(--background-500);
+
+}
