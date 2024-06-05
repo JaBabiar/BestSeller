@@ -1,0 +1,12 @@
+CREATE TABLE users (
+  UserID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  UserName varchar(128) NOT NULL,
+  Password varchar(128) NOT NULL,
+  Email varchar(256)
+);
+CREATE TABLE cards (
+  CardID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  Header varchar(256) NOT NULL,
+  Content varchar(256) NOT NULL,
+  Image varchar(256)
+);

@@ -29,46 +29,10 @@
         <h2>Nasze Realizacje</h2>
         <p>Check out some of our completed solar panel projects.</p>
         <div class='card-wrapper'>
-            <div class='card'>
-                <div class="img-wrapper">
-                    <img src="https://placehold.co/600x300" alt="placeholder">
-                </div>
-                <div class="content">
-                    <h4> Lorem Ipsum</h4>
-                    <span>sunt facilis expedita corrupti totam repudiandae esse perferendis quam ducimus sapiente iure dolorum sequi?</span>
-                </div>
-            </div>
-
-            <div class='card'>
-                <div class="img-wrapper">
-                    <img src="https://placehold.co/600x300" alt="placeholder">
-                </div>
-                <div class="content">
-                    <h4> Lorem Ipsum</h4>
-                    <span>sunt facilis expedita corrupti totam repudiandae esse perferendis quam ducimus sapiente iure dolorum sequi?</span>
-                </div>
-            </div>
-
-            <div class='card'>
-                <div class="img-wrapper">
-                    <img src="https://placehold.co/600x300" alt="placeholder">
-                </div>
-                <div class="content">
-                    <h4> Lorem Ipsum</h4>
-                    <span>sunt facilis expedita corrupti totam repudiandae esse perferendis quam ducimus sapiente iure dolorum sequi?</span>
-                </div>
-            </div>
-
-            <div class='card'>
-                <div class="img-wrapper">
-                    <img src="https://placehold.co/600x300" alt="placeholder">
-                </div>
-                <div class="content">
-                    <h4> Lorem Ipsum</h4>
-                    <span>sunt facilis expedita corrupti totam repudiandae esse perferendis quam ducimus sapiente iure dolorum sequi?</span>
-                </div>
-            </div>
-            
+            <?php 
+                $cardsObj = new cardsView();
+                $cardsObj->showCards();
+            ?>
         </div>
     </div>
 
@@ -86,10 +50,12 @@
         </div>
     </div>
 
-    <footer class="">
-        <p>&copy; 2023 BestSeller Solar Panels</p>
-        <p>Contact: contact@bestseller.com | Phone: 123-456-7890</p>
-        <p>Realizacja: Jakub Babiarczyk</p>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 BestSeller Solar Panels</p>
+            <p>Contact: contact@bestseller.com | Phone: 123-456-7890</p>
+            <p>Realizacja: Jakub Babiarczyk</p>
+        </div>
     </footer>
     </div>
 
@@ -99,11 +65,7 @@
 
 
         <?php 
-            //$usersObj = new UserView();
-            //$usersObj->showUser('JanKowalski');
-
-            //$userObj2 = new UserContr();
-            //$userObj2->createUser('AndrzejKmicic', 'g@mail.com', 'zaq1@WSX');
+        
         ?>
     </body>
     </html>

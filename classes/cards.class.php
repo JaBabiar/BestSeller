@@ -2,10 +2,10 @@
 
 class Cards extends Dbh{
 
-    protected function getCards($panel){
-        $sql = 'SELECT * FROM cards where panel = ?';
+    protected function getCards(){
+        $sql = 'SELECT * FROM cards';
         $stmt = $this->connect()->prepare($sql);
-        $stmt->execute([$panel]);
+        $stmt->execute();
 
         $results = $stmt->fetchAll();
         return $results;
